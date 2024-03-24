@@ -21,9 +21,9 @@ https://github.com/diegoveloper/flutter_hold_down_animated_button/assets/4898256
 
 
 
-# Inspired by "Kavsoft" 
 
-https://twitter.com/_Kavsoft/status/1770539226234507570
+
+
 
 
 ## If you like the code, don't forget to star it :)
@@ -37,4 +37,9 @@ https://twitter.com/_Kavsoft/status/1770539226234507570
 https://www.youtube.com/channel/UCFKZxStYsOVrzdN_FCZ0NGg/join
 
 
+
+
+### Inspired by "Kavsoft" 
+
+https://twitter.com/_Kavsoft/status/1770539226234507570
 
