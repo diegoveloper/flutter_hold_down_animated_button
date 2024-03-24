@@ -9,14 +9,17 @@ My social networks:
 - https://bio.link/diegoveloper
 
 
-# Flutter Transition Animation
+# Flutter Hold Down Animated Button
 
 Result
 
 
 
 
-https://github.com/diegoveloper/flutter_transition_animation_avatars/assets/4898256/69c7f722-4ff4-46ac-8d25-de7cd0e6fe01
+https://github.com/diegoveloper/flutter_hold_down_animated_button/assets/4898256/2401f898-59a0-4916-9324-8cf429ee1140
+
+
+
 
 
 
