@@ -81,54 +81,45 @@ class _HoldDownAnimatedButtonState extends State<HoldDownAnimatedButton>
                 child: AnimatedBuilder(
                   animation: _progressController,
                   builder: (context, snapshot) {
-                    return ClipRRect(
-                      borderRadius: borderRadius,
-                      child: Stack(
-                        children: [
-                          Positioned(
-                            left: 0,
-                            right: 0,
-                            top: 0,
-                            height: widget.height,
-                            child: DecoratedBox(
-                              decoration: const BoxDecoration(
-                                gradient: LinearGradient(
-                                  colors: [
-                                    Colors.black54,
-                                    Colors.black87,
-                                    Colors.black,
-                                  ],
-                                  begin: Alignment.topCenter,
-                                  end: Alignment.bottomCenter,
-                                ),
-                                borderRadius: borderRadius,
+                    return Center(
+                      child: DecoratedBox(
+                        decoration: const BoxDecoration(
+                          borderRadius: borderRadius,
+                          gradient: LinearGradient(
+                            colors: [
+                              Colors.black54,
+                              Colors.black87,
+                              Colors.black,
+                            ],
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                          ),
+                        ),
+                        child: Stack(
+                          alignment: Alignment.center,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                vertical: 8.0,
+                                horizontal: 16,
                               ),
-                              child: Center(
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    vertical: 8.0,
-                                    horizontal: 16,
+                              child: widget.child,
+                            ),
+                            Positioned(
+                              left: 0,
+                              top: 0,
+                              bottom: 0,
+                              width: constraints.maxWidth * _progressController.value,
+                              child: IgnorePointer(
+                                child: DecoratedBox(
+                                  decoration: BoxDecoration(
+                                    color: Colors.white.withOpacity(0.5),
                                   ),
-                                  child: widget.child,
                                 ),
                               ),
                             ),
-                          ),
-                          Positioned(
-                            left: 0,
-                            top: 0,
-                            bottom: 0,
-                            width: constraints.maxWidth *
-                                _progressController.value,
-                            child: IgnorePointer(
-                              child: DecoratedBox(
-                                decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(0.5),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     );
                   },
